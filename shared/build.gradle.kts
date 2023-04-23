@@ -1,7 +1,6 @@
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
-    id("org.jetbrains.compose")
 }
 
 kotlin {
@@ -27,11 +26,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(compose.runtime)
-                implementation(compose.foundation)
-                implementation(compose.material)
-                @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
-                implementation(compose.components.resources)
+
             }
         }
         val iosX64Main by getting
@@ -45,7 +40,7 @@ kotlin {
         }
         val desktopMain by getting {
             dependencies {
-                implementation(compose.desktop.common)
+
             }
         }
     }
