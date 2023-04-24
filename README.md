@@ -1,5 +1,5 @@
 # Compilation bug in Kotlin Native and Kotlin JS
-
+https://github.com/JetBrains/compose-multiplatform/issues/2255
 
 ### To reproduce on iOS:
 `./gradlew shared:linkPodDebugFrameworkIosSimulatorArm64`
