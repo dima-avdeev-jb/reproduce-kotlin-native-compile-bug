@@ -5,7 +5,6 @@ plugins {
 
 kotlin {
     jvm("desktop")
-
     iosX64()
     iosArm64()
     iosSimulatorArm64()
@@ -20,7 +19,6 @@ kotlin {
             baseName = "shared"
             isStatic = true
         }
-        extraSpecAttributes["resources"] = "['src/commonMain/resources/**', 'src/iosMain/resources/**']"
     }
 
     sourceSets {
